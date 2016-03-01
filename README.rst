@@ -4,6 +4,9 @@ Geo4all - OSGeo education and research outreach: how it works and how to join
 Talk for FOSS4G NA 2016:
 https://2016.foss4g-na.org/session/geo4all-osgeo-education-and-research-outreach-how-it-works-and-how-join
 
+Online:
+http://ncsu-osgeorel.github.io/geo4all
+
 Abstract
 --------
 
@@ -35,27 +38,30 @@ Building and publishing pages for this repository
 
 Clone the repository::
 
-    git clone ... lecture-slides-template
-
-Clone again into different directory and switch to ``gh-pages`` branch
-in this clone::
-
-    git clone ... lecture-slides-template-pages
-    cd lecture-slides-template-pages
-    git checkout gh-pages
+    git clone https://github.com/ncsu-osgeorel/geo4all
 
 Navigate to the first clone and build pages::
 
-    cd ../lecture-slides-template
-    ./copy-common-files.py --dst-dir=../lecture-slides-template-pages/
-    ./build-slides.py --outdir=../lecture-slides-template-pages/ title.html template-slides.html plain-slides.html math-slides.html build-slides.html
+    cd geo4all
 
-Navigate to the other clone to commit and push::
+Do your changes, build to a `build` directory::
 
-    cd ../lecture-slides-template-pages
+    ./build.sh
+
+Review the changes, add the changes, commit and push::
+
     git add -A
     git commit -am "new colors for the website"
     git push
+
+Get the `gh-pages` branch for publishing (clones into the `build`
+directory)::
+
+    ./get-gh-pages-branch.sh
+
+Publish (uses the `gh-pages` branch)::
+
+    ./publish.sh
 
 About
 -----
