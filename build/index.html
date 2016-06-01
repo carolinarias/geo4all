@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a generated file. Do not edit. -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Template for lecture slides</title>
+
+        <meta name="description" content="Template for lecture slides of NCSU OSGeoREL courses">
+        <meta name="author" content="Vaclav Petras">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        body {
+        /*background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;*/
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a {
+            color: #060 !important;
+        }
+        a:hover {
+            color: #060 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            color: #060 !important;
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #060 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+    <h2><b>Geo for all</b></h2>
+    <h3>OSGeo education and research outreach: </h3>
+    <h3>How it works and how to join</h3>
+    <p style="margin-top: 0.5em">
+        Helena Mitasova</p>
+    <p class="title-foot">
+        <a href="http://www.ncsu.edu/" title="North Carolina State University">NCSU</a>
+        <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory">OSGeoREL</a>
+        at
+        <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics">Center for Geospatial Analytics</a>
+        <br>
+    </p>
+    <p class="small">with contributions by Suchith Anand, Venkatesh Raghavan, Maria Brovelli and the Geo for all community</p>
+</section>
+
+<section>
+    <h2>Who we are</h2>
+<h3> Global network of academic research and education laboratories and government/industry partners</h3>
+<p>    <img src="img/geoforallC.png" height="35%">
+</section>
+
+<section>
+    <h2>What is our mission</h2>
+<p style="margin-top: 0.5em">
+        <h3>Making geospatial education and opportunities accessible to all</h3>
+<p style="margin-top: 0.5em">
+    <img src="img/geoforallC.png" height="35%">
+</section>
+
+<section>
+    <h2>What are our goals</h2>
+<ul>
+<li>Create research and teaching opportunities in open geospatial science 
+<li>Build global open access teaching and research infrastructure 
+<li>Establish collaborations between academia, government and industry around 
+open geospatial science and education
+</ul>
+</section>
+
+<section>
+   <h2>How it started</h2>
+<p>Founded in 2011: MoU between OSGeo and the International Cartographic Association (ICA)
+<p> <img src="img/751px-Mou_ica-osgeo.jpg" height="270"> 
+<img src="img/800px-Jeff_georg_renew_mou_2015.jpg" height="270"> 
+<br> <img src="img/osgeo_logo.png" height="80"> &nbsp;&nbsp; <img src="img/ICA_logo.png" height="80">
+<p class="credit" >Georg Gartner and Arnulf Christl, renewal in 2015 with Jeff McKenna</p>
+</section>
+
+<section>
+   <h2>More MoUs coming</h2>
+        <p>International Society for Photogrammetry and Remote Sensing (ISPRS) MoU signed in 2014.
+<p><img src="img/800px-ICA-OSGeo-ISPRS-presidents.jpg" height="250"> 
+<br> <img src="img/osgeo_logo.png" height="60"> &nbsp;&nbsp; <img src="img/ICA_logo.png" height="60">
+&nbsp;&nbsp;
+    <img src="img/isprs_logo.jpg" height="60">
+<p class="credit">Georg Gartner, Jeff McKenna and Chen Jun</p>
+        <p class="small"> University Consortium for GIScience (UCGIS) to be signed in 2016</p>
+</section>
+
+<section>
+    <h2>Map of the labs 2012</h2>
+   <p>10 labs in 2012 
+    <p><img src="img/geo4allmap2012.png" height="400">
+<!--    <img src="img/geoforallmap.png" width="40%">-->
+</section>
+
+<section>
+    <h2>Map of the labs 2016</h2>
+   <p>over 100 labs globaly in 2016
+   <p> <img src="img/geo4allmap2016.png" height="400">
+<!--    <img src="img/geoforallmap.png" width="40%">-->
+</section>
+
+<section>
+   <h2>Organization</h2>
+    <p style="margin-top: 0.5em"> 
+  Global chair: <b>Suchith Anand</b>
+</p>
+<ul>
+  <li>regional chairs for each continent: 
+  <br>contact persons for new members
+  <li>advisory board: OSGeo, ICA, ISPRS presidents, 
+  <br> and academic leaders
+  <li>100+ lab directors
+</ul>
+<p>
+<img src="img/osgeo_logo.png" height="100"> &nbsp;&nbsp; <img src="img/ICA_logo.png" height="100">
+&nbsp;&nbsp; <img src="img/isprs_logo.jpg" height="100">
+</section>
+
+<section>
+    <h2>Newsletter</h2>
+<p>
+<ul>
+   <li>chief editor Nikos Lambrinos,
+   <br>Aristotle Univ. of Thessaloniki, Greece
+   <li>monthly highlights of activities, lab of the month
+   <li>events, conferences, webinars, courses, workshops
+   <li>funding, scholarships, exchange programs
+   <li>ideas, social contributions
+</ul>
+<p><img src="img/Newsletter_banner.png" height="120">
+<p class="small">http://www.geoforall.org/newsletters/</p>
+</section>
+
+<section>
+   <h2>Education and research</h2>
+<p>
+<ul>
+  <li>develop open access shared educational material based on FOSS4G (not limited to OSGeo projects)
+  <li>develop/contribute to open geospatial software, data
+  <li>organize/participate in community sprints
+</ul>
+<p><img src="img/geoacademy.png" height="150">
+<p class="credit">Educator of the year award: Geoacademy team, fossgeo.org 
+<p class="small">OSGeo Educational Content Inventory http://www.osgeo.org/educational_content</p>
+</section>
+
+<section>
+   <h2>Webinars</h2>
+<p>http://www.geoforall.org/webinars/ 
+<p>Interested to present? Contact Rafael.Moreno@ucdenver.edu
+<p><img src="img/webinarsHOT.png" height="200">
+<img src="img/webinarsHOTauthors.jpg" height="200">
+</section>
+
+<section>
+   <h2>Conferences</h2>
+<ul>
+  <li>academic sessions at the global FOSS4G
+  <li>contribute to open geospatial sessions
+      at major scientific conferences (ISPRS, AGU, EGU, ...)
+  <li>best student paper awards by OSGeo, ICA, ISPRS
+</ul>
+</section>
+
+<section>
+    <h2>More activities</h2>
+<p>
+<ul>
+   <li>Thematic initiatives: 
+    <ul>
+    <li>OpenCity smart
+    <li>AgriGIS
+    <li>CitizenScience
+    <li>K-12 education, colaboration with mapstory.org
+    </ul>
+   <li>NASA World-Wind Europa challenge
+</ul>
+<p><img src="img/NASAww_crystalbull.jpg" height="220">
+<img src="img/NASAww_earthquakes2.png" height="220">
+<p class="credit">2015 winner: Trillium Learning, Kodiak Island Borough School District, Alaska</p>
+</section>
+
+<section>
+    <h2>Google Summer of Code</h2>
+<p>
+<ul>
+   <li>OSGeo umbrella for OSGeo software and guest geospatial projects
+   <li> 22 students accepted in 2016
+</ul>
+<p><img src="img/GSoCatOSGeo.png" height="120">
+<p class="small">https://wiki.osgeo.org/wiki/Google_Summer_of_Code_2016_Ideas</p>
+</section>
+
+<section>
+    <h2>Google Summer of Code</h2>
+Project by Anna Petrasova, at CTU, Prague in 2011
+<ul>
+ <li>https://grasswiki.osgeo.org/wiki/WxNviz_GSoC_2011
+ <li>now PhD student at NCSU lab
+ <li>lead developer of Tangible Landscape
+ <li>GSoC student in 2014 and mentor in 2016
+</ul>
+<p><img src="img/GSOC_WxNviz_volume_slices_2.png" height="220">
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<img src="img/GSoCr3flow_flowlines_color.png" height="220">
+</section>
+
+<section>
+    <h2>Geospatial FOSS at NCSU</h2>
+NCSU OSGeo Research and Education Laboratory: 
+https://geospatial.ncsu.edu/osgeorel
+
+<ul>
+  <li>course development using Geospatial FOSS
+  <li>research projects
+  <li>active participation in OSGeo projects
+</ul>
+<p>
+<img src="img/summer_solstice_centennial.gif" height="250">
+</section>
+
+<section>
+    <h2>Course material </h2>
+<ul>
+<li>Freely and openly available online 
+<br>geospatial.ncsu.edu/osgeorel
+<li>Managed in GitHub for revision control and collaboration
+<li>Format: HTML/HTML5, License: CC BY-SA
+<li>registered in OSGeo Educational Content Inventory 
+</ul>
+<img src="img/osgeorel_courses_header.png" height="200">
+</section>
+
+<section>
+<h2>Tangible Landscape</h2>
+<p>Tangible interface for GRASS GIS
+<p>
+<img src="img/tangible/tangible_landscape_composite.png">
+<p>
+Book: 
+Petrasova, A., Harmon, B., Petras, V., Mitasova, H.
+<a href="http://www.springer.com/us/book/9783319257730">
+Tangible Modeling with Open Source GIS,</a>
+Springer International Publishing, 2015.
+</section>
+
+<!--
+<section>
+<h2>Tangible Landscape</h2>
+<img src="img/tangible/dam.jpg" style="width: 30%">
+<img src="img/tangible/viewshed.jpg" style="width: 30%">
+<img src="img/tangible/termites.jpg" style="width: 30%">
+<p>
+<a href="http://geospatial.ncsu.edu/osgeorel/publications.html">links to publications</a>
+</section>
+-->
+
+<section>
+<h2>Tangible Landscape</h2>
+
+<iframe allowfullscreen width="640" height="390"
+    src="http://www.youtube.com/embed/EJc57GFJeZI?autoplay=1&amp;loop=1&amp;rel=0&amp;playlist=EJc57GFJeZI">
+</iframe>
+<p>
+see more videos at
+<a href="https://www.youtube.com/channel/UCc37pVh-WE46Xkqeq-KZQsA">NCSU OSGeo REL YouTube channel</a>
+</section>
+
+<section>
+    <h2>Where to find more info</h2>
+<p><b>Website</b> http://www.geoforall.org</p>
+<p><b>Mailing lists:</b> Global and regional</p>
+<p>
+    <img src="img/geo4allheader.png" height="250">
+</section>
+
+<section>
+<h2>Where to find member labs </h2>
+<p align="left"><b>Wiki</b> http://wiki.osgeo.org/wiki/Edu_current_initiatives </p>
+   <ul>
+      <li>member table with links to labs
+      <li>Newsletter: lab of the month
+      <li>education and research topics
+      <li>one slide lab info in geo for all presentations
+      <ul>
+        <li>see slides #33-53<br>
+       http://www.slideshare.net/mariabrovelli/geoforall-a-successful-osgeo-initiative
+      </ul>
+   </ul>
+<p>
+    <img src="img/geo4allwikitable.png" height="150">
+</section>
+
+<section>
+    <h2>How to participate</h2>
+<p>
+Three types of participation:
+<ul>
+  <li><b>members</b> of the global network: academic labs
+  <li><b>partners</b> from industry/government/nonprofit partner
+  <li>international professional organizations through MoUs
+</ul>
+</section>
+
+<section>
+    <h2>How to join</h2>
+<p>
+http://www.geoforall.org/how_to_join/
+<ul>
+  <li>read the criteria
+  <li>if you fulfill the criteria, contact a regional chair, describe your
+  open source geospatial activities 
+  <li>if invited: 
+  <ul>
+    <li>register at OSGeo wiki
+    <li>create entry for your lab in the wiki table
+    <li>join the mailing list
+    <li>list your research and edu interests
+    <li>participate - see http://wiki.osgeo.org/wiki/Geoforall_criteria
+  </ul>
+</ul>
+</section>
+
+<section>
+    <h2>How to become a partner</h2>
+<p>
+http://www.geoforall.org/how_to_join/
+<ul>
+  <li>read the criteria for the labs
+  <li>contact a regional chair, describe your
+  interests in partnering with geo for all labs 
+  <li>if invited:
+  <ul>
+    <li>register at OSGeo wiki
+    <li>create entry for your instituition  in the wiki table
+    <li>join the mailing list
+    <li>list your research and edu interests
+    <li>participate - see http://wiki.osgeo.org/wiki/Geoforall_criteria
+  </ul>
+</ul>
+</section>
+
+<section>
+   <h3>What are the benefits of joining Geo for All?</h3>
+<br>
+You are asking the wrong question, your should ask
+<p>
+<br>
+   <h2>How can I contribute?</h2>
+</section>
+
+<section>
+    <h2>Thank you !</h2>
+    <h2>Questions?</h2>
+<p>
+<br>
+    <img src="img/hunt_vis.jpg" height="150">
+</section>
+
+
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                // width: 960,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ],
+
+                math: {
+                    mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                }
+            });
+
+        </script>
+        <script type="text/javascript"
+    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    </body>
+</html>
