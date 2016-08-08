@@ -5,7 +5,7 @@ Talk for FOSS4G NA 2016:
 https://2016.foss4g-na.org/session/geo4all-osgeo-education-and-research-outreach-how-it-works-and-how-join
 
 Online:
-http://ncsu-osgeorel.github.io/geo4all
+http://ncsu-geoforall-lab.github.io/geo4all
 
 Abstract
 --------
@@ -38,7 +38,7 @@ Building and publishing pages for this repository
 
 Clone the repository::
 
-    git clone https://github.com/ncsu-osgeorel/geo4all
+    git clone https://github.com/ncsu-geoforall-lab/geo4all
 
 Navigate to the first clone and build pages::
 
